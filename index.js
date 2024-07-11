@@ -11,7 +11,7 @@ dotenv.config();
 
 
 app.use(cors({
-    origin: ['http://localhost:3000','/',"http://localhost:5173",'https://resume.indiaarticle24.com'],
+    origin: ['http://localhost:3000','/',"http://localhost:5173",'https://resume.indiaarticle24.com','https://airesumes.netlify.app'],
     credentials: true,
   }));
   
