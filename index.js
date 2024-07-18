@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import Express from "express";
-import PostRoutes from "./routes/PostRoutes.js"
+import AuthRoutes from "./routes/AuthRoutes.js"
 import cors from "cors"
 import AddResumeRoutes from './routes/AddResumeRoutes.js';
 // import cookieParser from "cookie-parser";
@@ -19,7 +19,7 @@ app.use(cors({
   app.use(Express.json())
 
 
-app.use("/api/post",PostRoutes)
+app.use("/api/auth",AuthRoutes)
 app.use("/api/resume",AddResumeRoutes)
 
 app.listen(PORT,(req,res)=>{

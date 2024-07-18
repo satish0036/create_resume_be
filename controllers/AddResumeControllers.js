@@ -56,6 +56,9 @@ export const getUserResumes = async (req, res) => {
     });
   }
 };
+
+
+
 export const getUserResumesByResumeId = async (req, res) => {
   // console.log(req.query)
   const {resumeId} = req.query;
@@ -82,10 +85,8 @@ export const getUserResumesByResumeId = async (req, res) => {
 
 
 export const updateResumeDetails = async (req, res) => {
-  const { firstName, lastName, jobTitle, address, phone, email, resumeId } = req.body;
   // console.log(req.body)
-
-  // Assuming 'resumeId' is the primary key
+  const { firstName, lastName, jobTitle, address, phone, email, resumeId } = req.body;
   const addContent = `
     INSERT INTO personal_detail (firstName, lastName, jobTitle, address, phone, email, resumeId)
     VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -119,6 +120,7 @@ export const updateResumeDetails = async (req, res) => {
 };
 
 export const updateResumeSummary = async (req, res) => {
+
   const { summary, resumeId } = req.body;
   // console.log(req.body)
 
