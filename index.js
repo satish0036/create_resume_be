@@ -16,8 +16,7 @@ app.use(cors({
     'https://resume.indiaarticle24.com',
     'https://airesumes.netlify.app',
     'https://nextjs-resume-builder-pink.vercel.app',
-    'https://nextjs-resume-builder-pink.vercel.app/',
-    'https://my-ai-resume.netlify.app/'
+    'https://my-ai-resume.netlify.app'
   ],
   credentials: true,
 }));
