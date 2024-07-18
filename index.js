@@ -15,7 +15,8 @@ app.use(cors({
     , "http://localhost:5173",
     'https://resume.indiaarticle24.com',
     'https://airesumes.netlify.app',
-    'https://nextjs-resume-builder-pink.vercel.app'
+    'https://nextjs-resume-builder-pink.vercel.app',
+    'https://nextjs-resume-builder-pink.vercel.app/'
   ],
   credentials: true,
 }));
